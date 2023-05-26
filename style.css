@@ -1,0 +1,17 @@
+body {
+  background-color: #400101;
+}
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#start-page {
+  background-image: url('./res/background/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

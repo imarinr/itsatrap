@@ -5,34 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's a trap!</title>
-    <script src="screen_manager.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>it's a trap!</h1>
-    </header>
     <main>
         <div id="start-page">
+            <h1>it's a trap!</h1>
             <p>
                 ¿Eres lo suficientemente astuto como para atrapar los objetos correctos? ¡Demuéstralo en nuestro nuevo juego! <br>
                 En este juego, tu personaje debe atrapar varios objetos en cada nivel. Pero ten cuidado, algunos de ellos pueden causarte daño. ¡No te preocupes, si pierdes un objeto, siempre hay más! <br>
                 Con una variedad de niveles y objetos, ¡nunca te aburrirás! ¿Estás listo para el desafío? ¡Juega ahora y demuestra tus habilidades de atrapar objetos!
             </p>
-            <button>Jugar!</button>
-            <button>Ajustes</button>
-            <button>Acerca de</button>
+            <button type="button" onclick="setVisible('game-screen')">Jugar!</button> <br>
+            <button type="button" onclick="setVisible('settings-screen')">Ajustes</button> <br>
+            <button type="button" onclick="setVisible('about-screen')">Acerca de</button> <br>
         </div>
         <div id="game-screen">
             <canvas></canvas>
         </div>
         <div id="settings-screen">
-            <button>Volver</button>
+            <button type="button" onclick="goBack()">Volver</button>
             <form action="#">
                 <label for="check_soundEffects">Efectos de sonido</label>
-                <input type="checkbox" name="sound-effects" id="check_soundEffects">
+                <input type="checkbox" name="sound-effects" id="check_soundEffects"> <br>
+                <label for="check_music">Música</label>
+                <input type="checkbox" name="check_music" checked>
             </form>
         </div>
-        <div id="about-screen"></div>
+        <div id="about-screen">
+            <button type="button" onclick="goBack()">Volver</button>
+            <h2>Acerca de</h2>
+            <p>
+                It's a trap! fue creado como proyecto final del bootcamp Front-end de Código Facilito.
+
+                Autor: Ivan Marin <a href="#">(GitHub)</a>
+
+                v.0.1 (mayo 25 2023)
+            </p>
+        </div>
     </main>
+    <script src="screen_manager.js"></script>
 </body>
 </html>

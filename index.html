@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a trap!</title>
+    <script src="screen_manager.js"></script>
+</head>
+<body>
+    <header>
+        <h1>it's a trap!</h1>
+    </header>
+    <main>
+        <div id="start-page">
+            <p>
+                ¿Eres lo suficientemente astuto como para atrapar los objetos correctos? ¡Demuéstralo en nuestro nuevo juego! <br>
+                En este juego, tu personaje debe atrapar varios objetos en cada nivel. Pero ten cuidado, algunos de ellos pueden causarte daño. ¡No te preocupes, si pierdes un objeto, siempre hay más! <br>
+                Con una variedad de niveles y objetos, ¡nunca te aburrirás! ¿Estás listo para el desafío? ¡Juega ahora y demuestra tus habilidades de atrapar objetos!
+            </p>
+            <button>Jugar!</button>
+            <button>Ajustes</button>
+            <button>Acerca de</button>
+        </div>
+        <div id="game-screen">
+            <canvas></canvas>
+        </div>
+        <div id="settings-screen">
+            <button>Volver</button>
+            <form action="#">
+                <label for="check_soundEffects">Efectos de sonido</label>
+                <input type="checkbox" name="sound-effects" id="check_soundEffects">
+            </form>
+        </div>
+        <div id="about-screen"></div>
+    </main>
+</body>
+</html>

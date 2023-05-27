@@ -2,7 +2,7 @@ let history = [];
 let allScreens = document.body.querySelector("main").children;
 
 function initialize() {
-    setVisible("start-page");
+    setVisible("game-screen");
 }
 
 function setVisible(screen_id) {

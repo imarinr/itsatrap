@@ -21,13 +21,13 @@
             <button type="button" onclick="setVisible('about-screen')">Acerca de</button> <br>
         </div>
         <div id="game-screen">
-            <canvas></canvas>
+            <canvas id="canvas"></canvas>
         </div>
         <div id="settings-screen">
             <button type="button" onclick="goBack()">Volver</button>
             <form action="#">
                 <label for="check_soundEffects">Efectos de sonido</label>
-                <input type="checkbox" name="sound-effects" id="check_soundEffects"> <br>
+                <input type="checkbox" name="sound-effects" id="check_soundEffects" checked> <br>
                 <label for="check_music">Música</label>
                 <input type="checkbox" name="check_music" checked>
             </form>
@@ -45,5 +45,6 @@
         </div>
     </main>
     <script src="screen_manager.js"></script>
+    <script src="gameCanvas.js"></script>
 </body>
 </html>

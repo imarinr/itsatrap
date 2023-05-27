@@ -1,6 +1,16 @@
 body {
   background-color: #400101;
 }
+
+canvas {
+  background-color: lightgray;
+  height: 480px;
+  width: 270px;
+  border-style: solid;
+  border-color: #C6C3AA;
+  border-width: 5px;
+  border-radius: 3px;
+}
 .visible {
   visibility: visible;
 }
